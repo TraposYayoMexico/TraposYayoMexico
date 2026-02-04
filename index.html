@@ -26,16 +26,16 @@
           </span>
         </a>
 
-        <!-- <nav class="nav" aria-label="Navegación principal">
-          <a class="nav-link" href="#productos">Productos</a>
+        <nav class="nav" id="primary-nav" aria-label="Navegación principal">
+          <a class="nav-link" href="/productos">Productos</a>
           <a class="nav-link" href="#sectores">Sectores</a>
           <a class="nav-link" href="#calidad">Calidad</a>
           <a class="nav-link" href="#contacto">Contacto</a>
-        </nav> -->
+        </nav>
 
-        <div class="header-actions">
-          <a class="btn btn-ghost" href="#contacto">Llamar</a>
-          <a class="btn btn-primary" href="#cotizar">Cotizar</a>
+        <div class="header-actions" id="header-actions">
+          <a class="btn btn-ghost btn-sm" href="#contacto">Llamar</a>
+          <a class="btn btn-primary btn-sm" href="#cotizar">Cotizar</a>
         </div>
 
         <!-- Toggle para móvil (sin JS: el menú se puede mejorar después con JS) -->
@@ -192,5 +192,6 @@
         document.getElementById('year').textContent = new Date().getFullYear();
       </script>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
