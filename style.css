@@ -45,6 +45,9 @@ body {
   color: var(--text);
   line-height: 1.5;
 }
+body {
+  background: linear-gradient(135deg, #0b1220 0%, #0f1c3a 50%, #0b1220 100%);
+}
 
 a {
   color: inherit;
@@ -351,9 +354,9 @@ a {
 }
 
 .fineprint {
-  margin: 12px 0 0;
+  margin: 50px 0 0;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 255);
 }
 
 /* Hero Visual */
