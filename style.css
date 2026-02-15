@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* style.css */
 :root {
   --bg: #0b1220;
@@ -244,7 +248,7 @@ a {
 /* Hero */
 .hero {
   position: relative;
-  padding: 56px 0 48px;
+  padding: 56px 0 15px;
 }
 
 .hero-inner {
@@ -675,7 +679,7 @@ html {
    ========================= */
 
 .products {
-  padding: 64px 0 40px;
+  padding: 0px 0 10px;
 
   background: rgba(11, 18, 32, 0.85);
 }
@@ -745,4 +749,96 @@ html {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: var(--muted);
+}
+/* ====== SECCIÓN PRODUCTOS ====== */
+
+.productos {
+  padding: 70px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  color: var(--muted);
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.producto-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.producto-img {
+  height: 220px;
+  overflow: hidden;
+}
+
+.producto-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.producto-card:hover img {
+  transform: scale(1.08);
+}
+
+.producto-info {
+  padding: 5px;
+}
+
+.producto-info h3 {
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+
+.producto-info p {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 15px;
+}
+
+.producto-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  color: #071021;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .productos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .productos-grid {
+    grid-template-columns: 1fr;
+  }
 }
