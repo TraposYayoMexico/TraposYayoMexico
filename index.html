@@ -85,40 +85,58 @@
             <p class="fineprint">*Sujeto a cobertura y disponibilidad. Cotiza volumen y destino.</p>
           </div>
 
-          <div class="hero-visual" aria-hidden="true">
+          <div class="hero-visual">
             <div class="visual-card">
-              <div class="visual-top">
-                <span class="pill">Algodón Limpio</span>
-                <span class="pill">Algodón Sucio</span>
-                <span class="pill">Color</span>
-                <span class="pill">Fibra Corta</span>
-              </div>
               <div class="visual-body">
-                <div class="visual-title">Presentaciones</div>
+                <div class="visual-title">¿Qué producto necesitas hoy?</div>
+              </div>
+
+              <!-- Productos -->
+              <div class="visual-top" id="productList"></div>
+
+              <div class="visual-body">
+                <div class="visual-title">Cotizador</div>
+
                 <div class="visual-grid">
                   <div class="visual-item">
-                    <span class="v-label">Paquete</span>
-                    <span class="v-value">10 kg</span>
+                    <span class="v-label">Cantidad</span>
+                    <div class="custom-select" id="kgSelect">
+                      <div class="select-trigger">Seleccionar</div>
+                      <div class="select-options">
+                        <div class="select-option">10 kg</div>
+                        <div class="select-option">15 kg</div>
+                        <div class="select-option">20 kg</div>
+                        <div class="select-option">Más de 20 kg</div>
+                      </div>
+                    </div>
                   </div>
+
                   <div class="visual-item">
-                    <span class="v-label">Mayoreo</span>
-                    <span class="v-value">+100 kg</span>
-                  </div>
-                  <div class="visual-item">
-                    <span class="v-label">Corte</span>
-                    <span class="v-value">Mediano</span>
-                  </div>
-                  <div class="visual-item">
-                    <span class="v-label">Uso</span>
-                    <span class="v-value">Aceites</span>
+                    <span class="v-label">Tipo de corte</span>
+                    <div class="custom-select" id="cutSelect">
+                      <div class="select-trigger">Seleccionar</div>
+                      <div class="select-options">
+                        <div class="select-option">Chico</div>
+                        <div class="select-option">Mediano</div>
+                        <div class="select-option">Largo</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+
+                <!-- Usos -->
+                <div id="productUses" class="uses-box">Selecciona un producto para ver sus usos.</div>
+
+                <div id="totalBox" class="total-box">Total estimado: $0 MXN</div>
+
+                <!-- Botón -->
+                <button id="orderBtn" class="btn btn-primary btn-block order-btn">Hacer pedido</button>
               </div>
+
               <div class="visual-footer">
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
-                <span class="note"></span>
               </div>
             </div>
           </div>

@@ -396,7 +396,7 @@ a {
 }
 
 .visual-body {
-  padding: 10px 16px 16px;
+  padding: 10px 16px 0px;
 }
 
 .visual-title {
@@ -458,6 +458,81 @@ a {
   height: 200px;
   background: radial-gradient(600px 140px at 40% 0%, rgba(79, 124, 255, 0.2), transparent 70%);
   pointer-events: none;
+}
+
+/* Estilos cotizador */
+.custom-select {
+  position: relative;
+  margin-top: 6px;
+}
+
+.select-trigger {
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.15);
+  color: white;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.select-trigger:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.select-options {
+  position: absolute;
+  width: 100%;
+  background: #071021;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  margin-top: 6px;
+  display: none;
+  overflow: hidden;
+  z-index: 50;
+}
+
+.select-option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.select-option:hover {
+  background: rgba(79, 124, 255, 0.3);
+}
+
+.uses-box {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.pill {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pill.active {
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  color: #071021;
+}
+
+.order-btn {
+  margin-top: 14px;
+}
+
+.total-box {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(79, 124, 255, 0.15);
+  border: 1px solid rgba(79, 124, 255, 0.35);
+  font-weight: 700;
+  text-align: center;
 }
 
 /* Footer */
