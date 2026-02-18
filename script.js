@@ -139,12 +139,12 @@ orderBtn.addEventListener('click', () => {
   }
 
   const message =
-    `🧾 *Nuevo pedido*%0A%0A` +
+    `🛒 *Nuevo pedido*%0A%0A` +
     `📦 Producto: ${selectedProduct.name}%0A` +
     `⚖️ Cantidad: ${selectedKg}%0A` +
-    `✂️ Corte: ${selectedCut}%0A` +
-    `💰 Total estimado: $${total.toFixed(2)} MXN%0A%0A` +
-    `Quisiera confirmar disponibilidad.`;
+    `🔪 Corte: ${selectedCut}%0A` +
+    `💲 Total estimado: $${total.toFixed(2)} MXN%0A%0A` +
+    `📲 Quisiera confirmar disponibilidad.`;
 
   window.open(`https://wa.me/525645973242?text=${message}`, '_blank');
 });
