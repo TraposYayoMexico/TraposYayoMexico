@@ -984,3 +984,61 @@ html {
 .blog-link:hover {
   color: var(--primary);
 }
+/* =========================
+   Historia
+   ========================= */
+
+.historia {
+  padding: 90px 0;
+  background: rgba(255, 255, 255, 0.03);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.historia-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.historia-text h2 {
+  font-size: clamp(26px, 3vw, 34px);
+  margin-bottom: 20px;
+}
+
+.historia-text p {
+  color: var(--muted);
+  margin-bottom: 16px;
+  line-height: 1.6;
+  max-width: 55ch;
+}
+
+.historia-highlight {
+  font-weight: 700;
+  color: var(--text);
+  margin-top: 20px;
+}
+
+.historia-visual img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 18px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 980px) {
+  .historia-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .historia-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .historia-visual {
+    order: -1;
+  }
+}
